@@ -1,0 +1,62 @@
+<div class="panel panel-default">
+	<div class="panel-heading">{{headerText}}</div>
+	<div class="panel-body">
+		<form class="form-horizontal" name="userForm" novalidate ng-submit="save(userForm.$valid)">
+			<div class="form-group" ng-class="{ 'has-error' : userForm.title.$invalid && !userForm.title.$pristine }">
+				<label class="control-label col-xs-1">Title:</label>
+				<div class="col-xs-11">
+					<input type="text" name="title" class="form-control" required  ng-minlength=3 ng-model="title">
+					<p ng-show="userForm.title.$error.minlength" class="help-block">Title is too short.</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-xs-1">Type:</label>
+				<div class="col-xs-11">
+					<select ng-model="type" class="form-control" ng-options="type for type in types | orderBy:'toString()'"></select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-xs-1">Start at:</label>
+				<div class="col-xs-4">
+					<p class="input-group">
+						<input kendo-date-time-picker ng-model="startTimeStr" k-ng-model="startTimeObj" />
+					</p>
+				</div>
+				<label class="control-label col-xs-1">End at:</label>
+				<div class="col-xs-4">
+					<p class="input-group">
+						<input kendo-date-time-picker ng-model="endTimeStr" k-ng-model="endTimeObj" />
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-xs-1">Invitees:</label>
+				<div class="col-xs-11">
+				<tags-input ng-model="invitees" add-from-autocomplete-only="true" display-property="name">
+					<auto-complete source="loadContacts($query)" min-length="2"></auto-complete>
+				</tags-input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-xs-1">Agenda:</label>
+				<div class="col-xs-11">
+					<text-angular ng-model="agenda"></text-angular>
+				</div>
+			</div>
+			<div class="icons">
+				<span ng-click="back($event)">
+					<input type="image" src="images/cancel64.png">
+					<span>Cancel</span>
+				</span>
+				<span ng-click="deleteMeeting($event)">
+					<input type="image" src="images/delete64.png">
+					<span>Delete</span>
+				</span>
+				<span ng-click="save($event)">
+					<img src="images/save64.png" style="vertical-align: inherit; display: inline-block;">
+					<span>Save</span>
+				</span>
+			</div>
+		</form>
+	</div>
+</div>

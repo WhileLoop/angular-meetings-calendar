@@ -1,0 +1,38 @@
+{
+  "name": "angular-meetings-calendar",
+  "dependencies": {
+    "angular": "~1.2.29",
+    "angular-ui-calendar": "~0.8.1",
+    "angular-route": "~v1.2.29",
+    "angular-resource": "~1.2.29",
+    "angular-bootstrap": "~0.11.0",
+    "kendo-ui-core": "~2014.2.716",
+    "ng-tags-input": "~2.1.1-1",
+    "angular-toastr": "~0.4.4",
+    "textAngular": "~1.2.0",
+    "angular-animate": "~1.2.29",
+    "bootstrap": "~3.2.0",
+    "ng-grid": "^2.0.11",
+    "angularjs-toaster": "~0.4.9",
+    "font-awesome": "~4.2.0"
+  },
+  "overrides": {
+    "kendo-ui-core": {
+      "main": [
+        "js/kendo.ui.core.min.js",
+        "styles/kendo.common.min.css",
+        "styles/kendo.silver.min.css"
+      ]
+    },
+    "textAngular": {
+      "main": [
+        "dist/textAngular.min.js",
+        "dist/textAngular-sanitize.min.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "~1.2.29",
+    "jquery": "~2.x"
+  }
+}

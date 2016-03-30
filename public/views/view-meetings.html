@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+	<div class="panel-heading">View Meetings</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="icons">
+				<span ng-click="addMeeting($event)">
+					<input type="image" src="images/add64.png" />
+					<span>Add</span>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div ui-calendar="uiConfig.calendar" calendar="calendar1" class="span8 calendar meetings-calendar" ng-model="eventSources"></div>
+		</div>
+	</div>
+</div>

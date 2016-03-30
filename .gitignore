@@ -1,0 +1,6 @@
+.DS_Store
+.vagrant
+node_modules/
+public/bower_components/
+tests/report
+npm-debug.log*

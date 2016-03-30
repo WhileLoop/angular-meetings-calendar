@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+
+		<title>Angular Calendar Meetingrooms</title>
+
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/fullcalendar/fullcalendar.css" />
+		<link rel="stylesheet" href="bower_components/kendo-ui-core/styles/kendo.common.min.css" />
+		<link rel="stylesheet" href="bower_components/kendo-ui-core/styles/kendo.silver.min.css" />
+		<link rel="stylesheet" href="bower_components/ng-tags-input/ng-tags-input.min.css" />
+		<link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css" />
+		<link rel="stylesheet" href="bower_components/angularjs-toaster/toaster.css" />
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+		<!-- endbower -->
+
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+		<script src="bower_components/fullcalendar/fullcalendar.js"></script>
+		<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/angular-resource/angular-resource.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="bower_components/kendo-ui-core/js/kendo.ui.core.min.js"></script>
+		<script src="bower_components/ng-tags-input/ng-tags-input.min.js"></script>
+		<script src="bower_components/angular-toastr/dist/angular-toastr.js"></script>
+		<script src="bower_components/textAngular/dist/textAngular.min.js"></script>
+		<script src="bower_components/textAngular/dist/textAngular-sanitize.min.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/ng-grid/build/ng-grid.js"></script>
+		<script src="bower_components/angularjs-toaster/toaster.js"></script>
+		<!-- endbower -->
+
+		<!-- Application styling. -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+		<!-- Application code. -->
+		<script type="text/javascript" src="javascripts/angularApp.js"></script> <!-- Load app.js before controllers. -->
+		<script type="text/javascript" src="javascripts/controllers/view-meetings-controller.js" type="text/javascript"></script>
+		<script type="text/javascript" src="javascripts/controllers/add-meeting-controller.js" type="text/javascript"></script>
+
+	</head>
+	<body ng-app='meetingsApp'>
+		<div ng-view class="mainView container"></div>
+		<div>
+			<a href="https://www.iconfinder.com/iconsets/colorful" target="_blank">Icons by Double J Designs</a>
+			<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons</a>
+		</div>
+	</body>
+</html>
